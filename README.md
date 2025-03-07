@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# NearestPlug - An E-Waste Recycling App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is designed to help users identify e-waste items, locate nearby recycling centers, and earn points for recycling. The app integrates Firebase for authentication and Firestore for data storage, along with Google Maps for location-based services.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **E-Waste Recognition**: Upload images to identify e-waste items.
+- **Recycling Center Locator**: Find the nearest recycling centers using Google Maps.
+- **User Authentication**: Sign up, log in, and manage your account using Firebase Authentication.
+- **Points System**: Earn points for recycling and track your progress.
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Follow these instructions to set up and run the project on your local machine.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+Before you begin, ensure you have the following installed:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Node.js](https://nodejs.org/) (v16 or higher recommended)
+- [npm](https://www.npmjs.com/) (comes with Node.js)
+- A Firebase project with Authentication and Firestore enabled.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### 1. Clone the Repository
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### 2. Install Dependencies
 
-### `npm run eject`
+Install all the required libraries and dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The following libraries will be installed:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- `react`
+- `react-dom`
+- `react-router-dom`
+- `firebase`
+- `@react-google-maps/api`
+- `react-toastify`
+- `tailwindcss` (if using Tailwind CSS)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+#### 3. Set Up Firebase
 
-## Learn More
+1. Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+2. Enable Authentication (Email/Password and Google Sign-In) and Firestore.
+3. Add your Firebase configuration to the project. Create a `.env` file in the root directory and add the following:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```env
+REACT_APP_FIREBASE_API_KEY=your-api-key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your-auth-domain
+REACT_APP_FIREBASE_PROJECT_ID=your-project-id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your-storage-bucket
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your-messaging-sender-id
+REACT_APP_FIREBASE_APP_ID=your-app-id
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+#### 4. Set Up Google Maps API
 
-### Code Splitting
+1. Go to the [Google Cloud Console](https://console.cloud.google.com/).
+2. Enable the Google Maps JavaScript API.
+3. Add your Google Maps API key to the `.env` file:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```env
+REACT_APP_GOOGLE_MAPS_API_KEY=your-google-maps-api-key
+```
 
-### Analyzing the Bundle Size
+#### 5. Run the Project
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Start the development server:
 
-### Making a Progressive Web App
+```bash
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The app will be available at [http://localhost:3000](http://localhost:3000).
