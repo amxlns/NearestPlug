@@ -36,3 +36,367 @@
     transform: rotate(360deg);
   }
 }
+/* src/App.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+}
+
+button {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff1c34;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.auth-container button {
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.auth-container button:hover {
+  background-color: #45a049;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* src/App.css */
+.auth-container p {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.auth-container a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
+
+/* src/App.css */
+.auth-container button {
+  width: 100%; /* Make all buttons full width */
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+/* Style for the Login button */
+.auth-container button[type="submit"] {
+  background-color: #4CAF50; /* Green color for Login button */
+  color: white;
+}
+
+.auth-container button[type="submit"]:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Style for the Google Sign-In button */
+.google-sign-in {
+  background-color: #4285f4; /* Google blue color */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.google-sign-in:hover {
+  background-color: #357abd; /* Darker blue on hover */
+}
+
+/* Optional: Add a Google logo to the button */
+.google-sign-in img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* src/App.css */
+nav {
+  background-color: #4CAF50;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Center the navigation items horizontally */
+  align-items: center; /* Center the navigation items vertically */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Add space between navigation items */
+  align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+}
+
+nav ul li button {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+  background-color: #ff1c34;
+}
+
+/* src/App.css */
+.logo-container {
+  display: flex;
+  justify-content: center; /* Center the logo horizontally */
+  padding: 15px 0; /* Add some padding above and below the logo */
+  background-color: #166d3b;
+  background-image: linear-gradient(147deg, #166d3b 0%, #000000 74%);; /* Optional: Add a background color */
+}
+
+.logo {
+  width: 450px; /* Adjust the size of the logo */
+  height: auto; /* Maintain aspect ratio */
+}
+
+nav {
+  background-color: #4CAF50;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center; /* Center the navigation items horizontally */
+  align-items: center; /* Center the navigation items vertically */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; /* Add space between navigation items */
+  align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #45a049;
+}
+
+nav ul li button {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+  background-color: #ff1c34;
+}
+
+/* src/App.css */
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.upload-section {
+  margin-bottom: 20px;
+}
+
+.file-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.image-preview {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.preview-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analyze-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.analyze-button:hover {
+  background-color: #45a049;
+}
+
+.analyze-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.results-section {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.results-section h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.results-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.results-section li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+.result-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.tip {
+  font-size: 14px;
+  color: #777;
+  margin-top: 10px;
+}

@@ -1,0 +1,50 @@
+/* src/Rewards.css */
+.rewards-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .rewards-container h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .rewards-list {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .reward-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .reward-item h3 {
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  .reward-item p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .reward-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .reward-item button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }

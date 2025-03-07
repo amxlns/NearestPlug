@@ -1,0 +1,56 @@
+/* src/Education.css */
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .education-container h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  .education-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .education-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .education-section p {
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .education-section ul,
+  .education-section ol {
+    margin-left: 20px;
+    color: #555;
+  }
+  
+  .education-section li {
+    margin-bottom: 5px;
+  }
+  
+  .faq {
+    margin-bottom: 15px;
+  }
+  
+  .faq h3 {
+    color: #4CAF50;
+    margin-bottom: 5px;
+  }
+  
+  .faq p {
+    color: #555;
+    margin-left: 20px;
+  }
